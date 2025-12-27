@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="End to End functional API Test Suite">
+    <test name="Functional API test case">
+    <classes>
+        <class name="Auth.LoginApiTest"/>
+        <class name="CommonAPI.Api_AutomationScripts"/>
+        <class name="CommonAPI.AutomateRequestBody_withThreeWays"/>
+        <class name="Products.AddNewProductApiTest"/>
+        <class name="Products.DeleteProductApiTest"/>
+        <class name="Products.Get_allProductsApiTest"/>
+        <class name="Products.GetSingleProductApiTest"/>
+        <class name="Products.Update_productApiTest"/>
+    </classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->

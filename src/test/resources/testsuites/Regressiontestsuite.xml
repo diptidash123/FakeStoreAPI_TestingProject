@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke Test Suite">
+    <listeners>
+        <listener class-name="core.ExtentTestListener"/>
+    </listeners>
+    <test name="API test case">
+        <classes>
+            <class name="Auth.LoginApiTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Sanity API Test Suite">
+    <test name="Sanity test case">
+        <classes>
+            <class name="Auth.LoginApiTest"/>
+            <class name="Products.AddNewProductApiTest"></class>
+            <class name="Products.GetSingleProductApiTest"></class>
+            <class name="Products.Get_allProductsApiTest"></class>
+            <class name="Products.Update_productApiTest"></class>
+            <class name="Products.DeleteProductApiTest"></class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

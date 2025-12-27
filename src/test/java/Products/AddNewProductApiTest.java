@@ -138,7 +138,6 @@ public class AddNewProductApiTest extends BaseTest_Extent
     {
         //step1 set the BaseURI
         baseURI = Endpoints.url;
-
         //step2 calling the pojo and set the test data
         AddNewProduct_API pojo_call=new AddNewProduct_API();
         pojo_call.setTitle("");

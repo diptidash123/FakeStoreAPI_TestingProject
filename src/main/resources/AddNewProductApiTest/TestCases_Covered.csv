@@ -1,0 +1,10 @@
+Add New Product – API (Test Cases)
+
+Create a product with valid and complete product details
+→ Verify the API returns 201 Created and the product is successfully added.
+
+Create a product with an empty or missing request body
+→ Verify the API returns 400 Bad Request with an appropriate error message.
+
+Create a product with missing mandatory fields in the request body
+→ Verify the API returns 201 Created and observe system behavior for partial payload handling (to be reported as a validation gap if applicable).

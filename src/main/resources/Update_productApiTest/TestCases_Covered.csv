@@ -1,0 +1,7 @@
+Update Product – API (Test Cases)
+
+Update product with valid product ID and correct request payload
+→ Verify that the API successfully updates the product and returns 200 OK with updated product details in the response.
+
+Attempt to update product using an invalid HTTP method (POST instead of PUT/PATCH)
+→ Verify that the API returns 404 Not Found (or appropriate method-related error), indicating the endpoint does not support the requested HTTP method.

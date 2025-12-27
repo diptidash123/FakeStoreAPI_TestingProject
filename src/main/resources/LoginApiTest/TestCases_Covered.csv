@@ -1,0 +1,13 @@
+Authentication – Login API (Test Scenarios & Test Cases)
+
+Login with valid username and password
+→ Verify that the API returns 201 Created and generates a valid authentication token.
+
+Login with empty or missing credentials (invalid payload)
+→ Verify that the API returns 400 Bad Request with an appropriate validation error message.
+
+Login with valid username and invalid password
+→ Verify that the API returns 401 Unauthorized indicating authentication failure.
+
+Login with invalid username and valid password
+→ Verify that the API returns 401 Unauthorized indicating authentication failure.

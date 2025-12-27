@@ -26,7 +26,7 @@ public class LoginApiTest extends BaseTest_Extent
     public String token_storeContainer;
     //Apply Retry to Test Case
     //If this test fails → it will auto re-run up to 2 times
-    @Test(description = "Authentication_Login_API (Login → Generate Token)")
+    @Test(description = "Authentication_Login_API")
     public void LoginApiTest() throws IOException {
         //step1 set the baseURI
         baseURI = Endpoints.url;
@@ -37,8 +37,7 @@ public class LoginApiTest extends BaseTest_Extent
         pojo_call.setPassword("83r5^_");
 
         //step3 create a bdd style template to validate the request
-        Response response =
-                (Response) given().contentType(ContentType.JSON)
+        Response response = given().contentType(ContentType.JSON)
                         .body(pojo_call)
                         .when().post(Endpoints.path_url_Login_API)
                         .then().statusCode(Statuscode_Repo.created.code).extract().response();
@@ -50,6 +49,7 @@ public class LoginApiTest extends BaseTest_Extent
         extentTest.assignAuthor("Dipti Ranjan Dash");
         extentTest.assignDevice("MacOS - Chrome");
         System.out.println(response.body().asString());
+
         //step4 store the token value to reuse it across the rest APIS!
         token_storeContainer = response.jsonPath().getString("token");
         System.out.println("==============================================");
@@ -75,9 +75,11 @@ public class LoginApiTest extends BaseTest_Extent
         //Validate the response time of an API
         System.out.println("Execution time: " + " " + response.getTime());
         long time = response.getTime();
-        if (time < 3000) {
+        if (time < 3000)
+        {
             System.out.println("The execution time is less then 3000ms");
-        } else {
+        } else
+        {
             System.out.println("The execution time is more then 3000ms");
         }
         SoftAssertionsReader.assertAll();

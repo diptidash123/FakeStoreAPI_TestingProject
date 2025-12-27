@@ -15,7 +15,7 @@ public class Api_AutomationScripts extends BaseTest_Extent
     private String token_storeContainer;
 
     //common API central portion!
-    @Test(description = "Authentication_Login_API (Login → Generate Token)")
+    @Test(description = "Authentication_Login_API")
     public void Login_API()
     {
         //Extent Report
@@ -50,7 +50,7 @@ public class Api_AutomationScripts extends BaseTest_Extent
         }
     }
 
-    @Test(description = "AddNewProduct_API (Create Product (Auth Required))")
+    @Test(description = "AddNewProduct_API")
     public void AddNewProduct_API()
     {
         //Extent Report
@@ -79,7 +79,7 @@ public class Api_AutomationScripts extends BaseTest_Extent
         Assert.assertEquals("AutomationTestingBook", "AutomationTestingBook");
     }
 
-    @Test(description = "GetSingleProduct_API (Get the product details specific to the id generated)")
+    @Test(description = "GetSingleProduct_API")
     public void GetSingleProduct_API()
     {
         //Extent Report
@@ -95,7 +95,7 @@ public class Api_AutomationScripts extends BaseTest_Extent
         //step3 assertions validations- response body
     }
 
-    @Test(description = "Get all products_API (Get Products)")
+    @Test(description = "Get all products_API")
     public void Get_allProducts_API()
     {
         //Extent Report
@@ -111,7 +111,7 @@ public class Api_AutomationScripts extends BaseTest_Extent
         //step3 assertions validations- response body
     }
 
-    @Test(description = "Update_product_API (Update Product) specific product id")
+    @Test(description = "Update_product_API")
     public void Update_product_API()
     {
         //Extent Report
@@ -130,7 +130,7 @@ public class Api_AutomationScripts extends BaseTest_Extent
         //step3 assertions validations- response body
     }
 
-    @Test(description = "Delete a product_API (Delete Product) specific product id")
+    @Test(description = "Delete a product_API")
     public void Delete_API()
     {
         //Extent Report

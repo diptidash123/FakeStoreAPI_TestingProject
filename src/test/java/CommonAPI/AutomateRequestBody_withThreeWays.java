@@ -21,7 +21,7 @@ public class AutomateRequestBody_withThreeWays
 {
     public String token_storeContainer;
     //Automate request body with Normal String JSON to String Conversion
-    @Test(description = "Authentication_Login_API (Login → Generate Token)")
+    @Test(description = "Authentication_Login_API")
     public void Login_API_withString() {
         //step1 set the baseURI
         baseURI = Endpoints.url;
@@ -53,7 +53,7 @@ public class AutomateRequestBody_withThreeWays
         }
     }
 
-    @Test(description = "AddNewProduct_API (Create Product (Auth Required))")
+    @Test(description = "AddNewProduct_API")
     public void AddNewProduct_API_withString() {
         //step1 set the BaseURI
         baseURI = Endpoints.url;
@@ -79,7 +79,7 @@ public class AutomateRequestBody_withThreeWays
 
     }
 
-    @Test(description = "Update_product_API (Update Product) specific product id")
+    @Test(description = "Update_product_API")
     public void Update_product_API_withString() {
         //step1 set the BaseURI
         baseURI = Endpoints.url;
@@ -111,7 +111,7 @@ public class AutomateRequestBody_withThreeWays
     }
 
     //Automate request body with External JSON file JSON to String conversion using IOUtiles class from common.io
-    @Test(description = "Authentication_Login_API (Login → Generate Token)")
+    @Test(description = "Authentication_Login_API")
     public void Login_API_withExternalJsonFile() throws IOException, ParseException {
         //step1 set the baseURI
         baseURI = Endpoints.url;
@@ -151,7 +151,7 @@ public class AutomateRequestBody_withThreeWays
         }
     }
 
-    @Test(description = "AddNewProduct_API (Create Product (Auth Required))")
+    @Test(description = "AddNewProduct_API")
     public void AddNewProduct_API_withExternalJsonFile() throws IOException {
         //step1 set the BaseURI
         baseURI = Endpoints.url;
@@ -182,7 +182,7 @@ public class AutomateRequestBody_withThreeWays
 
     }
 
-    @Test(description = "Update_product_API (Update Product) specific product id")
+    @Test(description = "Update_product_API")
     public void Update_product_API_withExternalJsonFile() throws IOException {
         //step1 set the BaseURI
         baseURI =Endpoints.url;
@@ -202,7 +202,7 @@ public class AutomateRequestBody_withThreeWays
     }
 
     //Automate request body with Pojo class adding jackson-databind dependency
-    @Test(description = "Authentication_Login_API (Login → Generate Token)")
+    @Test(description = "Authentication_Login_API")
     public void Login_API_withPojo()
     {
         //step1 set the baseURI
@@ -239,7 +239,7 @@ public class AutomateRequestBody_withThreeWays
         }
     }
 
-    @Test(description = "AddNewProduct_API (Create Product (Auth Required))")
+    @Test(description = "AddNewProduct_API")
     public void AddNewProduct_API_withPojo() {
         //step1 set the BaseURI
         baseURI = Endpoints.url;
@@ -278,7 +278,7 @@ public class AutomateRequestBody_withThreeWays
         Assert.assertEquals("AutomationTestingBook", "AutomationTestingBook");
     }
 
-    @Test(description = "Update_product_API (Update Product) specific product id")
+    @Test(description = "Update_product_API")
     public void Update_product_API_withPojo() {
         //step1 set the BaseURI
         baseURI = Endpoints.url;

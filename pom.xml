@@ -71,6 +71,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testsuites/Sanitytestsuite.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testsuites/E2Etestsuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

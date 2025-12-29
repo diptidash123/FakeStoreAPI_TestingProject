@@ -1,15 +1,15 @@
 **FakeStoreAPI – REST Assured API Automation**
 
-**Project Overview**
+**Project Overview:-**
 
 This project demonstrates a real-time REST Assured API automation framework built from scratch using the FakeStoreAPI public APIs. The goal of this project was to convert manual API test cases into a scalable automation framework, following industry-standard SDET best practices. This project was developed as a self-paced learning initiative to gain hands-on, real-world experience in API automation, framework design and test strategy.
 
-**Project Objectives**
+**Project Objectives:-**
 - Convert manual API test cases (validated in Postman) into automated REST Assured tests
 - Build a maintainable, reusable and scalable API automation framework
 - Follow real-time SDET framework standards
 
-**End-to-End API Flow**
+**End-to-End API Flow:-**
 - Authentication Login API → Login & generate token
 - Add New Product API (Auth required)
 - Get Single Product API (using generated product ID)
@@ -17,7 +17,7 @@ This project demonstrates a real-time REST Assured API automation framework buil
 - Update Product API (specific product ID)
 - Delete Product API (specific product ID)
 
-**Tech Stack & Tools**
+**Tech Stack & Tools:-**
 
 | Tool / Technology  | Purpose                                             |
 | ------------------ | --------------------------------------------------- |
@@ -31,7 +31,7 @@ This project demonstrates a real-time REST Assured API automation framework buil
 | **Jenkins**        | CI/CD automation and test execution pipelines       |
 | **Git & GitHub**   | Version control and source code management          |
 
-**Dependencies Used**
+**Dependencies Used:-**
 
 | Dependency                | Version | Purpose                                       |
 | ------------------------- | ------- | --------------------------------------------- |
@@ -44,7 +44,7 @@ This project demonstrates a real-time REST Assured API automation framework buil
 | **Extent Reports**        | 5.1.1   | Interactive HTML reporting                    |
 
 
-**Framework Design**
+**Framework Design:-**
 
 The framework follows clean architecture and separation:
 
@@ -128,20 +128,20 @@ FakeStoreAPI_Testing
 └── pom.xml                         Maven dependencies & plugins
 
 ```
-**Request Body Automation (3 Real-Time Approaches)**
+**Request Body Automation (3 Real-Time Approaches):-**
 
 **1.String-Based JSON (Basic)** - Used for quick validations.
 
-**2.External JSON Files (Industry Standard)** - Test data stored in src/test/resources/payload_testdata, Improves maintainability & reusability , Code optimized using reusable FileInputStream utility
+**2.External JSON Files (Industry Standard)** - Test data stored in src/test/resources/payload_testdata,Improves maintainability & reusability ,Code optimized using reusable FileInputStream utility
 
-**3.POJO Classes (Best Practice)** - Java objects mapped to JSON, Uses Jackson serialization , Enables dynamic test data handling
+**3.POJO Classes (Best Practice)** - Java objects mapped to JSON,Uses Jackson serialization ,Enables dynamic test data handling
 
-**Configuration Management**
+**Configuration Management:-**
 - Environment-specific values stored in .properties files
 - Centralized ConfigReader utility
 - No hard-coded URLs in test scripts
 
-**Retry Mechanism (Enterprise Level)**
+**Retry Mechanism (Enterprise Level):-**
 - Implemented framework-level retry using:
   ITestListener
 - AnnotationTransformer
@@ -152,42 +152,42 @@ Network instability
 Token expiry issues
 Note: Retry is used only for flaky failures, not to hide real bugs.
 
-**Assertions Strategy**
+**Assertions Strategy:-**
 - Soft Assertions utility implemented
 - Reduces repetitive assertion code
 - Allows multiple validations in a single test
 - Improves readability & debugging
 
-**JSON Schema Validation**
+**JSON Schema Validation:-**
 - Validates response structure against schema
 - Ensures API contract consistency
 - Used for POST / PUT - APIs
 
-**Reporting**
+**Reporting:-**
 - Integrated Extent HTML Reports
 - Includes: Test details , Request & response logging, Pass/Fail status , Supports serialization & deserialization
 
 **Test Coverage**
 
-**Authentication API**
+**Authentication API:-**
 
 - Valid credentials → 201 Created
 - Empty payload → 400 Bad Request
 - Invalid credentials → 401 Un-authorized
 - Invalid username / password combinations
   
-**Add Product API**
+**Add Product API:-**
   
 - Valid request → 201 Created
 - Empty request body → 400 Bad Request
 - Invalid key-value pairs → API behaviour validated
 
-**CI/CD & Version Control**
+**CI/CD & Version Control:-**
 - Project pushed from local to GitHub
 - Maven-based execution ready for Jenkins CI
 - Designed for easy pipeline integration
 
-**What I Learned from This Project**
+**What I Learned from This Project:-**
 - How real API automation frameworks are built in IT companies
 - How to convert manual test cases into automation logically
 - Framework-level retry handling
@@ -197,14 +197,14 @@ Note: Retry is used only for flaky failures, not to hide real bugs.
 This project demonstrates my hands-on experience in building a real-time REST Assured API automation framework from scratch, covering authentication, CRUD operations, data-driven testing, retry mechanisms,
 schema validation and reporting—following enterprise SDET best practices.
 
-**Notes & Limitations** 
+**Notes & Limitations:-** 
 
 - This project uses a public fake API, so authentication is optional and requests work even without a token.
 - Newly created IDs are not persisted across API calls, as the backend does not store data permanently.
 - Pre-existing IDs are used to validate the end-to-end functional flow and ensure consistent test execution.
 - API Documentation https://fakestoreapi.com/docs
 
-**Highlights Covered**
+**Highlights Covered:-**
 
 - End-to-end API automation using REST Assured
 - Real-time SDET framework architecture with clean components

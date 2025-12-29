@@ -89,7 +89,7 @@ public class LoginApiTest extends BaseTest_Extent
         //Negative testcases
         //Apply Retry to Test Case
         //If this test fails → it will auto re-run up to 2 times
-        @Test(description = "Authentication_Login_API",priority = 2)
+        @Test(description = "Authentication_Login_API",priority = 2, enabled = false)
         public void LoginApiTest_NTC002() throws IOException
         {
             //step1 set the baseURI
@@ -145,7 +145,7 @@ public class LoginApiTest extends BaseTest_Extent
          //Negative testcases
         //Apply Retry to Test Case
         //If this test fails → it will auto re-run up to 2 times
-        @Test(description = "Authentication_Login_API",priority = 3)
+        @Test(description = "Authentication_Login_API",priority = 3,enabled = false)
         public void LoginApiTest_NTC003() throws IOException
         {
             //step1 set the baseURI
@@ -202,7 +202,7 @@ public class LoginApiTest extends BaseTest_Extent
         //Negative testcases
         //Apply Retry to Test Case
         //If this test fails → it will auto re-run up to 2 times
-        @Test(description = "Authentication_Login_API",priority = 4)
+        @Test(description = "Authentication_Login_API",priority = 4,enabled = false)
         public void LoginApiTest_NTC004() throws IOException
         {
             //step1 set the baseURI

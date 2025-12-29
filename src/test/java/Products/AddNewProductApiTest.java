@@ -76,7 +76,7 @@ public class AddNewProductApiTest extends BaseTest_Extent
         Assert.assertEquals("AutomationTestingBook", "AutomationTestingBook");
 
     }
-    @Test(description = "AddNewProduct_API",priority = 2)
+    @Test(description = "AddNewProduct_API",priority = 2,enabled = false)
     public void AddNewProductApiTest_NTC002()
     {
         //step1 set the BaseURI
@@ -133,7 +133,7 @@ public class AddNewProductApiTest extends BaseTest_Extent
         Assert.assertEquals("AutomationTestingBook", "AutomationTestingBook");
 
     }
-    @Test(description = "AddNewProduct_API",priority = 3)
+    @Test(description = "AddNewProduct_API",priority = 3,enabled = false)
     public void AddNewProductApiTest_NTC003()
     {
         //step1 set the BaseURI

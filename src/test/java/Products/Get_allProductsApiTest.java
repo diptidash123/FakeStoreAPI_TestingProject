@@ -34,6 +34,8 @@ public class Get_allProductsApiTest extends BaseTest_Extent
         extentTest.assignDevice("MacOS - Chrome");
 
         //step3 assertions validations- response body
+        //print all the details of the products
+        System.out.println(response.body().asString());
 
     }
 }

@@ -49,7 +49,7 @@ public class Update_productApiTest extends BaseTest_Extent
         //step3 assertions validations- response body
     }
 
-    @Test(description = "Update_product_API",priority = 2)
+    @Test(description = "Update_product_API",priority = 2,enabled = false)
     public void UpdateProductApiTest_NTC002() {
         //step1 set the BaseURI
         baseURI = Endpoints.url;

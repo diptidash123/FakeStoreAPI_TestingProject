@@ -2,14 +2,12 @@
 
 **Project Overview**
 
-This project demonstrates a real-time REST Assured API automation framework built from scratch using the FakeStoreAPI public APIs. The goal of this project was to convert manual API test cases into a scalable automation framework, following industry-standard SDET best practices. This project was developed as a self-paced learning initiative to gain hands-on, real-world experience in API automation, framework design, and test strategy—similar to what is expected in enterprise projects.
+This project demonstrates a real-time REST Assured API automation framework built from scratch using the FakeStoreAPI public APIs. The goal of this project was to convert manual API test cases into a scalable automation framework, following industry-standard SDET best practices. This project was developed as a self-paced learning initiative to gain hands-on, real-world experience in API automation, framework design and test strategy.
 
 **Project Objectives**
 - Convert manual API test cases (validated in Postman) into automated REST Assured tests
-- Build a maintainable, reusable, and scalable API automation framework
+- Build a maintainable, reusable and scalable API automation framework
 - Follow real-time SDET framework standards
-- Implement best practices used in IT/enterprise projects
-- Make the project interview-ready and GitHub-review-friendly
 
 **End-to-End API Flow**
 - Authentication Login API → Login & generate token
@@ -18,14 +16,14 @@ This project demonstrates a real-time REST Assured API automation framework buil
 - Get All Products API
 - Update Product API (specific product ID)
 - Delete Product API (specific product ID)
-- This flow simulates a real production API lifecycle, not just isolated API calls.
 
 **Tech Stack & Tools**
+
 | Tool / Technology  | Purpose                                             |
 | ------------------ | --------------------------------------------------- |
 | **Java**           | Core programming language used for test automation  |
 | **REST Assured**   | API automation and validation framework             |
-| **TestNG**         | Test execution, assertions, grouping, and reporting |
+| **TestNG**         | Test execution, assertions, grouping and reporting |
 | **Maven**          | Build management and dependency handling            |
 | **IntelliJ IDEA**  | Integrated Development Environment (IDE)            |
 | **Postman**        | Manual API testing and validation                   |
@@ -34,6 +32,7 @@ This project demonstrates a real-time REST Assured API automation framework buil
 | **Git & GitHub**   | Version control and source code management          |
 
 **Dependencies Used**
+
 | Dependency                | Version | Purpose                                       |
 | ------------------------- | ------- | --------------------------------------------- |
 | **REST Assured**          | 5.5.5   | API request execution and response validation |
@@ -47,7 +46,7 @@ This project demonstrates a real-time REST Assured API automation framework buil
 
 **Framework Design**
 
-The framework follows clean architecture and separation of concerns:
+The framework follows clean architecture and separation:
 
 ```text
 FakeStoreAPI_Testing
@@ -166,15 +165,19 @@ Note: Retry is used only for flaky failures, not to hide real bugs.
 
 **Reporting**
 - Integrated Extent HTML Reports
--Includes: Test steps , Request & response logging, Pass/Fail status , Supports serialization & deserialization
+- Includes: Test details , Request & response logging, Pass/Fail status , Supports serialization & deserialization
 
 **Test Coverage**
+
 **Authentication API**
+
 - Valid credentials → 201 Created
 - Empty payload → 400 Bad Request
 - Invalid credentials → 401 Un-authorized
 - Invalid username / password combinations
+  
 **Add Product API**
+  
 - Valid request → 201 Created
 - Empty request body → 400 Bad Request
 - Invalid key-value pairs → API behaviour validated
@@ -192,13 +195,28 @@ Note: Retry is used only for flaky failures, not to hide real bugs.
 - Clean code & reusability principles
 
 This project demonstrates my hands-on experience in building a real-time REST Assured API automation framework from scratch, covering authentication, CRUD operations, data-driven testing, retry mechanisms,
-schema validation, and reporting—following enterprise SDET best practices.
+schema validation and reporting—following enterprise SDET best practices.
 
 **Notes & Limitations** 
 
-- This project uses a public fake API, so authentication is optional and requests work even without a valid token.
+- This project uses a public fake API, so authentication is optional and requests work even without a token.
 - Newly created IDs are not persisted across API calls, as the backend does not store data permanently.
 - Pre-existing IDs are used to validate the end-to-end functional flow and ensure consistent test execution.
 - API Documentation https://fakestoreapi.com/docs
+
+**Highlights Covered**
+
+- End-to-end API automation using REST Assured
+- Real-time SDET framework architecture with clean components
+- Data-driven testing using external JSON files and POJO models
+- Environment-based execution (dev / qa / staging / prod)
+- Framework-level retry mechanism for handling flaky failures
+- Soft assertion strategy for multiple validations in a single test
+- JSON schema validation to ensure API contract integrity
+- Reusable utilities for configuration, payload handling and reporting
+- Detailed Extent HTML reports with request and response logging
+- Maven-based execution with CI/CD readiness using Jenkins
+- GitHub version control with interview-ready project structure
+
 
 Author: Dipti Ranjan Dash 

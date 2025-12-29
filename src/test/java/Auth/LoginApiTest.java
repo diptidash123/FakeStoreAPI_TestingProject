@@ -24,6 +24,7 @@ import static utils.ExtentReport.extentTest;
 public class LoginApiTest extends BaseTest_Extent
 {
     public String token_storeContainer;
+    //Positive and Negative test cases covered
     //Apply Retry to Test Case
     //If this test fails → it will auto re-run up to 2 times
     //Positive testcase

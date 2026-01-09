@@ -197,6 +197,49 @@ Note: Retry is used only for flaky failures, not to hide real bugs.
 This project demonstrates my hands-on experience in building a real-time REST Assured API automation framework from scratch, covering authentication, CRUD operations, data-driven testing, retry mechanisms,
 schema validation and reporting—following enterprise SDET best practices.
 
+**Framework Execution**
+
+**Maven Execution**:-
+
+**Prerequisites**
+
+JDK 11+
+
+Maven 3.8+
+
+**Commands**
+
+mvn clean test
+
+mvn clean test -suiteXmlFile=src/test/resources/testsuites/Smoketestsuite.xml
+
+mvn clean test -suiteXmlFile=src/test/resources/testsuites/Regressiontestsuite.xml
+
+**Execution Flow**
+
+clean → compile → test → report generation
+
+**Jenkins Execution**:-
+
+**Job Type**
+
+Freestyle / Maven Pipeline
+
+**Build Step**
+
+clean test -suiteXmlFile=src/test/resources/testsuites/Regressiontestsuite.xml
+
+
+**Pipeline Flow**
+
+Git Checkout → Maven Build → Test Execution → Retry → Extent Report
+
+
+**Trigger**
+
+Manual / CRON-based scheduled runs.
+
+
 **Notes & Limitations:-** 
 
 - This project uses a public fake API, so authentication is optional and requests work even without a token.

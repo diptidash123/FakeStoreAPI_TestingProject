@@ -1,4 +1,4 @@
-**FakeStoreAPI – REST Assured API Automation**
+**FakeStoreAPI – REST Assured API Automation Project**
 
 **Project Overview:-**
 
@@ -128,13 +128,13 @@ FakeStoreAPI_Testing
 └── pom.xml                         Maven dependencies & plugins
 
 ```
-**Request Body Automation (3 Real-Time Approaches):-**
+**Request Body Automated (Three Real-Time Approaches):-**
 
-**1.String-Based JSON (Basic)** - Used for quick validations.
+**1.String-Based JSON** - Used for quick validations.
 
-**2.External JSON Files (Industry Standard)** - Test data stored in src/test/resources/payload_testdata,Improves maintainability & reusability ,Code optimized using reusable FileInputStream utility
+**2.External JSON Files** - Test data stored in src/test/resources/payload_testdata,Improves maintainability & reusability ,Code optimized using reusable FileInputStream utility
 
-**3.POJO Classes (Best Practice)** - Java objects mapped to JSON,Uses Jackson serialization ,Enables dynamic test data handling
+**3.POJO Classes** - Java objects mapped to JSON,Uses Jackson serialization ,Enables dynamic test data handling
 
 **Configuration Management:-**
 - Environment-specific values stored in .properties files
@@ -150,7 +150,7 @@ Why Retry?
 Temporary server failures (502 / 503 / 504)
 Network instability
 Token expiry issues
-Note: Retry is used only for flaky failures, not to hide real bugs.
+**Note:** Retry is used only for flaky failures, not to hide real bugs.
 
 **Assertions Strategy:-**
 - Soft Assertions utility implemented
@@ -188,11 +188,11 @@ Note: Retry is used only for flaky failures, not to hide real bugs.
 - Designed for easy pipeline integration
 
 **What I Learned from This Project:-**
-- How real API automation frameworks are built in IT companies
-- How to convert manual test cases into automation logically
-- Framework-level retry handling
-- Data-driven API testing
-- Clean code & reusability principles
+- How real API automation frameworks are built in IT companies.
+- How to convert manual test cases into automation logically.
+- Framework-level retry handling approaches
+- Data-driven API testing(DDT)
+- Clean code & reusability components across the project.
 
 This project demonstrates my hands-on experience in building a real-time REST Assured API automation framework from scratch, covering authentication, CRUD operations, data-driven testing, retry mechanisms,
 schema validation and reporting—following enterprise SDET best practices.
@@ -211,9 +211,9 @@ Maven 3.8+
 
 mvn clean test
 
-mvn clean test -suiteXmlFile=src/test/resources/testsuites/Smoketestsuite.xml
+mvn clean test - suiteXmlFile=src/test/resources/testsuites/Smoketestsuite.xml
 
-mvn clean test -suiteXmlFile=src/test/resources/testsuites/Regressiontestsuite.xml
+mvn clean test - suiteXmlFile=src/test/resources/testsuites/Regressiontestsuite.xml
 
 **Execution Flow**
 
@@ -223,16 +223,16 @@ clean → compile → test → report generation
 
 **Job Type**
 
-Freestyle / Maven Pipeline
+Maven Pipeline
 
 **Build Step**
 
-clean test -suiteXmlFile=src/test/resources/testsuites/Regressiontestsuite.xml
+clean test - suiteXmlFile=src/test/resources/testsuites/Regressiontestsuite.xml
 
 
 **Pipeline Flow**
 
-Git Checkout → Maven Build → Test Execution → Retry → Extent Report
+Git Checkout → Maven Build → Deploy → Test Execution → Retry → Extent Report
 
 
 **Trigger**
@@ -259,7 +259,7 @@ Manual / CRON-based scheduled runs.
 - Reusable utilities for configuration, payload handling and reporting
 - Detailed Extent HTML reports with request and response logging
 - Maven-based execution with CI/CD readiness using Jenkins
-- GitHub version control with interview-ready project structure
+- GitHub version control with ready project structure
 
 
 Author: Dipti Ranjan Dash 

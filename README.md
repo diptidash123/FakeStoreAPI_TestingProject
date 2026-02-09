@@ -150,6 +150,7 @@ Why Retry?
 Temporary server failures (502 / 503 / 504)
 Network instability
 Token expiry issues
+
 **Note:** Retry is used only for flaky failures, not to hide real bugs.
 
 **Assertions Strategy:-**

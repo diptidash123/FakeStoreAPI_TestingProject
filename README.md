@@ -257,10 +257,12 @@ Manual / CRON-based scheduled runs.
 - Framework-level retry mechanism for handling flaky failures
 - Soft assertion strategy for multiple validations in a single test
 - JSON schema validation to ensure API contract integrity
-- Reusable utilities for configuration, payload handling and reporting
+- Reusable utilities for configuration, payload handling, and reporting
 - Detailed Extent HTML reports with request and response logging
-- Maven-based execution with CI/CD readiness using Jenkins
-- GitHub version control with ready project structure
+- Local execution and validation of test suites before CI/CD integration
+- Maven-based execution using mvn clean verify test for command-line validation
+- CI/CD-ready framework with Jenkins pipeline integration principles
+- GitHub version control with well-structured project setup
 
 
 Author: Dipti Ranjan Dash 
